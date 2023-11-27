@@ -1,3 +1,1 @@
-i = 1
-for i in range(10):
-    print("islam")
+print("Programming is like building a multilingual puzzle")
