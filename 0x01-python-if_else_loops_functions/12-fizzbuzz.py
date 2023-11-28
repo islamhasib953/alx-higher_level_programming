@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def fizzbuzz():
     for i in range(1, 101):
         if i % 3 == 0:
@@ -9,5 +9,3 @@ def fizzbuzz():
             print("FizzBuzz", end=" " if i < 100 else "\n")
         else:
             print("{}".format(i), end=" " if i < 100 else "\n")
-
-fizzbuzz()
