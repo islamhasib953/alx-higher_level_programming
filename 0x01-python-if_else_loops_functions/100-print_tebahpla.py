@@ -7,4 +7,4 @@ for i in range(122, 96, -1):
     else:
         y = chr(i - 32)
         x *= -1
-    print("{}".format(y),end="")
+    print("{}".format(y), end="")
