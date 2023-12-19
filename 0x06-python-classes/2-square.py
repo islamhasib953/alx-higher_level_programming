@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-creates a square class object
+classes and objects tasks
 """
 
 
@@ -10,12 +10,12 @@ class Square:
     """
     def __init__(self, size=0):
         """
-        constractor for square class
+        the constructor for Square class
         Args:
-        size (int) : size of sauare, defualts to zero
+        size (int) : the size of the square. defaults to Zero.
         """
         if type(size) != int:
             raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("ize must be >= 0")
+        if size < 0:
+            raise ValueError("size must be >= 0")
         self.__size = size
