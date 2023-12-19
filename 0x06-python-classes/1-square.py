@@ -5,10 +5,10 @@ creates a square class object
 
 
 class Square:
-    """
-    creates a square class object
-    """
-    pass
-    """
-    pass
-    """
+    def __init__(self, size):
+        """
+        constractor for square class
+        Args:
+        size(int): size of sauare
+        """
+        self.__size = size
