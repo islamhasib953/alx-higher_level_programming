@@ -1,45 +1,41 @@
 #!/usr/bin/python3
-"""
-creates a square class object
-"""
+"""classes and objects tasks."""
 
 
 class Square:
-    """
-    square class
-    """
+    """square class."""
 
     def __init__(self, size=0):
         """
-        constractor for square class
+        Initialise Constructor for Square class.
+
         Args:
-        size (int) : size of sauare, defualts to zero
+        size (int) : the size of the square. defaults to Zero.
         """
         self.__size = size
 
     @property
     def size(self):
-        """size getter"""
+        """Size getter."""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """size setter"""
-        if type(value) is not int:
+        if type(value) != int:
             raise TypeError("size must be an integer")
-        elif value < 0:
-            raise ValueError("ize must be >= 0")
+        if value < 0:
+            raise ValueError("size must be >= 0")
         self.__size = value
 
     def area(self):
-        """
-        returns the current square area
-        """
+        """Get the area of a square based on a certain size."""
         return self.__size * self.__size
 
     def my_print(self):
-        """prints in stdout the square with the character #"""
-        for i in range(self.__size):
-            for j in range(self.__size):
-                print("#", end="")
+        """Print a squre with #."""
+        if self.size:
+            for x in range(self.size):
+                print("#" * self.size, end='')
+                print()
+        else:
             print()
