@@ -1,0 +1,42 @@
+import module:
+        >>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(1, 2)
+3
+
+>>> add_integer(1,2.5)
+3
+
+>>> add_integer(1.5,2)
+3
+
+>>> add_integer(1,-2)
+-1
+
+>>> add_integer(-51.3,2)
+-49
+
+>>> add_integer(1)
+99
+
+>>> add_integer(-15.5)
+83
+
+>>> add_integer("islam")
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(5,"hasib")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+>>> add_integer("islam",5)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(float('inf'),5)
+Traceback (most recent call last):
+    ...
+OverflowError: cannot convert float infinity to integer
