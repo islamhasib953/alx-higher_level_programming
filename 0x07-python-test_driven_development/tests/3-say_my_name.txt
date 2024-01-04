@@ -1,0 +1,20 @@
+test for 3-say_my_name.txt
+****************************
+import modlue:
+         >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("islam", "hasib")
+My name is islam hasib
+
+>>> say_my_name("islam")
+My name is islam
+
+>>> say_my_name(111, "islam")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name("islam", ["hasib"])
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
