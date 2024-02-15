@@ -5,4 +5,4 @@ SELECT s.title title, g.genre_id genre_id
     FROM tv_shows s
     join tv_show_genres g
     ON s.id=g.show_id
-ORDER BY s.title and g.genre_id;
+ORDER BY s.title ASC, g.genre_id ASC;
