@@ -1,2 +1,2 @@
 #!/bin/bash
-semistandard --fix
+semistandard --fix $1
