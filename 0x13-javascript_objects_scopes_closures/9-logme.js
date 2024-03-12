@@ -1,8 +1,7 @@
 #!/usr/bin/node
 
+let x = 0;
 
-exports.logMe = function (item)
-{
-    let x=0;
-    return(`${x++}: ${item}`);
-}
+exports.logMe = function (item) {
+  console.log(`${x++}: ${item}`);
+};
