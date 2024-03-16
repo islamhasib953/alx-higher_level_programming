@@ -19,17 +19,19 @@ if __name__ == "__main__":
         db=sys.argv[3],
     )
 
-cusrsor = db.cursor()
+    cusrsor = db.cursor()
+    cusrsor.execute(
+        """
+    SELECT c.id, c.name, s.name
+                    FROM cities c
+                    JOIN  states s
+                    ON c.state_id=s.id
+                    ORDER BY c.id
+    """
+    )
 
-cusrsor.execute(
-    "SELECT `cities`.`id`, `cities`.`name`, `states`.`name`\
-            FROM `cities`\
-            JOIN `states` ON `cities`.`state_id` = `states`.`id`\
-            ORDER BY `cities`.`id`"
-)
+    for row in cusrsor.fetchall():
+        print(row)
 
-for row in cusrsor.fetchall():
-    print(row)
-
-cusrsor.close()
-db.close()
+    cusrsor.close()
+    db.close()
