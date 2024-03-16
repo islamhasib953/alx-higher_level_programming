@@ -21,13 +21,12 @@ if __name__ == "__main__":
 
 cusrsor = db.cursor()
 cusrsor.execute(
-    """
-SELECT c.id, c.name, s.name
-                FROM cities c
-                JOIN  states s
-                ON c.state_id=s.id
-                ORDER BY c.id
-"""
+    "SELECT c.id, c.name, s.name \
+                FROM cities c \
+                JOIN  states s \
+                ON c.state_id=s.id \
+                ORDER BY c.id \
+"
 )
 
 for row in cusrsor.fetchall():
