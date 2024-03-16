@@ -21,7 +21,7 @@ if __name__ == "__main__":
     )
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM `states` WHERE `name` LIKE 'N%'")
+    cursor.execute(f"SELECT * FROM `states` WHERE `name`='{sys.argv[4]}'")
     for row in cursor.fetchall():
         print(row)
     cursor.close()
