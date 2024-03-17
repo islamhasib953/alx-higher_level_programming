@@ -6,6 +6,7 @@ First state model
 
 from sqlalchemy import create_engine, Column, Integer, VARCHAR
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
@@ -16,5 +17,5 @@ class State(Base):
     """
 
     __tablename__ = "states"
-    id = Column("id", Integer(11), primary_key=True, autoincrement=True, nullable=False)
-    name = Column("name", VARCHAR(128), nullable=False)
+    id = Column(Integer(11), primary_key=True, autoincrement=True, nullable=False)
+    name = Column(VARCHAR(128), nullable=False)
