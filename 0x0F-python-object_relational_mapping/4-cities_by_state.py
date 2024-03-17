@@ -4,7 +4,8 @@
 """
 4-cities_by_state.py:
 script that lists all cities from the database hbtn_0e_4_usa
-Usage: ./4-cities_by_state.py <mysql username> <mysql password> <database name>
+Usage: ./4-cities_by_state.py <mysql username>
+<mysql password> <database name>
 """
 
 import MySQLdb

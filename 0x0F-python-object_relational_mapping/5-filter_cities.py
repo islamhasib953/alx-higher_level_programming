@@ -4,7 +4,8 @@
 5-filter_cities.py:
 script that takes in the name of a state as an argument
 and lists all cities of that state, using the database hbtn_0e_4_usa
-Usage: ./5-filter_cities.py <mysql username> <mysql password> <database name>
+Usage: ./5-filter_cities.py <mysql username>
+<mysql password> <database name>
 """
 
 import MySQLdb
