@@ -1,3 +1,0 @@
-#!/bin/bash
-semistandard --fix $1
-./push
