@@ -32,3 +32,9 @@ class Base:
                 all_lists.append(obj.to_dictionary())
         with open(name, "w") as f:
             f.write(cls.to_json_string(all_lists))
+
+    def from_json_string(json_string):
+        """returns the list of the JSON string representation"""
+        if json_string is None:
+            return []
+        return json.loads(json_string)
