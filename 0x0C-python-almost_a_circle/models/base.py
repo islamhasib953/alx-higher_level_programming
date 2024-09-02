@@ -48,3 +48,8 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return (dummy)
+    
+    @classmethod
+    def load_from_file(cls):
+        """returns a list of instances"""
+
