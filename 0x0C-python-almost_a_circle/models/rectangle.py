@@ -81,7 +81,7 @@ class Rectangle(Base):
             print("#" * self.__width)
 
     def __str__(self):
-        """return metgod str"""
-        return "[Rectangle] ( {} ) {} / {} - {} / {}".format(
+        """returns the string representation of the rectangle"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height
         )
