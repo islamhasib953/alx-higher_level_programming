@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""10-student"""
+"""11-student"""
 
 
 class Student:
@@ -17,6 +17,8 @@ class Student:
         if attrs is None:
             return self.__dict__
         else:
-            return {
-                key: value for key, value in self.__dict__.items() if key in attrs
-            }
+            return {key: value for key, value in self.__dict__.items() if key in attrs}
+
+    def reload_from_json(self, json):
+        """replaces all attributes of the Student instance"""
+        return {setattr(self, key, value) for key, value in json.items()}
