@@ -75,8 +75,6 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
-        """prints in stdout the Rectangle"""
+        """prints the rectangle"""
         for _ in range(self.__height):
-            for _ in range(self.__width):
-                print("#", end="")
-            print()
+            print("#" * self.__width)
