@@ -9,10 +9,10 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.width = width  # Use setter for validation
-        self.height = height  # Use setter for validation
-        self.x = x  # Use setter for validation
-        self.y = y  # Use setter for validation
+        self.__width = width  # Use setter for validation
+        self.__height = height  # Use setter for validation
+        self.__x = x  # Use setter for validation
+        self.__y = y  # Use setter for validation
 
     @property
     def width(self):
